@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="navbar">
+    <h2 class="logo">🎬 MovieWorld</h2>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<body>
+
+<h1>Movie World</h1>
+<input type="text" id="search" placeholder="Search movie..." onkeyup="searchMovie()">
+
+
+        <div class="movie-container" id="movieContainer"></div>
+        
+        <img src="https://m.media-amazon.com/images/I/81p+xe8cbnL._AC_SY679_.jpg">
+
+        <h3>Movie One</h3>
+        <p>Action | 2025</p>
+        <button onclick="openTrailer('https://www.youtube.com/embed/YoHD9XEInc0')">
+    Watch Trailer
+</button>
+
+    </div>
+
+    <div class="movie-container" id="movieContainer"></div>
+
+        <img src="https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg">
+
+        <h3>Movie Two</h3>
+        <p>Drama | 2024</p>
+        <button onclick="openTrailer('https://www.youtube.com/embed/YoHD9XEInc0')">
+    Watch Trailer
+</button>
+
+    </div>
+
+</div>
+<footer class="footer">
+    <p>© 2026 MovieWorld. All rights reserved.</p>
+</footer>
+<div id="trailerPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeTrailer()">✖</span>
+        <iframe id="trailerVideo" width="560" height="315" src=""
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
