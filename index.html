@@ -1,83 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Movie Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Movie World</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<div class="navbar">
-    <h2 class="logo">🎬 MovieWorld</h2>
-    <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">Movies</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </div>
-</div>
 
 <body>
 
-<h1>Movie World</h1>
-<input type="text" id="search" placeholder="Search movie..." onkeyup="searchMovie()">
+  <!-- HEADER -->
+  <header class="header">
+    <h1>🎬 Movie World</h1>
+    <input type="text" id="search" placeholder="Search movie...">
+  </header>
 
+  <!-- MAIN CONTENT -->
+  <main class="movies" id="movieList">
 
-        <div class="movie-container" id="movieContainer"></div>
-        
-        <img src="https://m.media-amazon.com/images/I/81p+xe8cbnL._AC_SY679_.jpg">
-
-        <h3>Movie One</h3>
-        <p>Action | 2025</p>
-        <button onclick="openTrailer('https://www.youtube.com/embed/YoHD9XEInc0')">
-    Watch Trailer
-</button>
-
-    </div>
-
-    <div class="movie-container" id="movieContainer"></div>
-
-        <img src="https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg">
-
-        <h3>Movie Two</h3>
-        <p>Drama | 2024</p>
-        <button onclick="openTrailer('https://www.youtube.com/embed/YoHD9XEInc0')">
-    Watch Trailer
-</button>
-
-    </div>
-
-</div>
-<footer class="footer">
-    <p>© 2026 MovieWorld. All rights reserved.</p>
-</footer>
-<div id="trailerPopup" class="popup">
-    <div class="popup-content">
-        <span class="close" onclick="closeTrailer()">✖</span>
-        <iframe id="trailerVideo" width="560" height="315" src=""
-        frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<script src="script.js"></script>
-</body><h1>🎬 Movie World</h1>
-
-<div class="movie-container">
-  <div class="movie-card">
-    <img src="https://m.media-amazon.com/images/I/51nbVEuw1HL._AC_.jpg" />
-    <div class="movie-info">
-      <h2>Inception</h2>
+    <div class="card">
+      <img src="https://i.imgur.com/Yo6l2XQ.jpg">
+      <h3>Inception</h3>
       <p>Action | Sci-Fi | 2010</p>
-      <button>Watch Now</button>
+      <button>Watch</button>
     </div>
-  </div>
 
-  <div class="movie-card">
-    <img src="https://m.media-amazon.com/images/I/81c8YwX0y6L._AC_SL1500_.jpg" />
-    <div class="movie-info">
-      <h2>Pulp Fiction</h2>
+    <div class="card">
+      <img src="https://i.imgur.com/6Q0QXQy.jpg">
+      <h3>Pulp Fiction</h3>
       <p>Crime | Drama | 1994</p>
-      <button>Watch Now</button>
+      <button>Watch</button>
     </div>
-  </div>
-</div>
 
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Movie World</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
